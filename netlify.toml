@@ -21,11 +21,12 @@
   to = "/.netlify/functions/:splat"
   status = 200
 
-# SPA fallback - redirect all other routes to index.html
+# SPA fallback - redirect all other routes to index.html (except functions)
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
+  force = false
 
 # Headers for security and performance
 [[headers]]
