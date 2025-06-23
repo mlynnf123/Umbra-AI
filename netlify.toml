@@ -1,9 +1,9 @@
 [build]
-  # No build command needed - files are pre-built
-  command = ""
+  # Build command for frontend
+  command = "npm run build"
   
-  # Directory to publish (frontend files)
-  publish = "DRAG_TO_DOMAIN"
+  # Directory to publish (built files)
+  publish = "dist"
   
   # Functions directory for serverless backend
   functions = "netlify/functions"
